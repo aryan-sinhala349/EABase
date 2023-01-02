@@ -22,7 +22,7 @@ project "EABase"
         "_CRT_SECURE_NO_WARNINGS"
     }
 
-    filter "system:windows"
+    filter { "options:relplat=windows10" }
         systemversion "latest"
 
     filter "configurations:Debug"
